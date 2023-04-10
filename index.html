@@ -53,7 +53,7 @@
     }
   </style>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">SelfUnroll</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle">
@@ -82,7 +82,7 @@
                 </li_self> -->
             </ul>
         </div>
-    </nav>
+    </nav> 
 
     <div class="container" style="padding-top: 80px; font-size: 20px">
         <div align="center">
@@ -118,6 +118,7 @@
               Wuhan University
               <sup>2</sup>
               Peking University
+              <br>
               <sup>*</sup>
               <small>Corresponding authors</small>
             </p>
@@ -131,7 +132,7 @@
             <a href="http://alumni.media.mit.edu/~shiboxin/">Boxin Shi</a><sup>4</sup> &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://people.inf.ethz.ch/pomarc/">Marc Pollefeys</a><sup>1,5</sup> &nbsp;&nbsp;&nbsp;&nbsp;
             <a href="https://zhpcui.github.io/">Zhaopeng Cui</a><sup>1</sup>-->
-            <br>
+            <!-- <br> -->
 
             <!--<sup>1</sup><a href="https://www.ethz.ch/en.html" style="color:black">ETH Zurich</a> &nbsp; &nbsp; &nbsp; &nbsp;
             <sup>2</sup><a href="http://www.ai.google/" style="color:black">Google</a> &nbsp; &nbsp; &nbsp; &nbsp;
@@ -140,10 +141,24 @@
             <sup>5</sup><a href="http://www.microsoft.com/" style="color:black">Microsoft</a>-->
         </div> 
     </div>
-
+    <!-- Download -->
+    
+    <div class="btn-group" role="group" aria-label="Top menu">
+      <a class="btn btn-primary" href='./selfunroll.pdf'>Paper</a>
+      <a class="btn btn-primary" href="https://github.com/w3un/SelfUnroll_event">Code</a>
+  </div>
+  <style>
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0; /* 设置上下边距为20像素 */
+    }
+    </style>
+  <br>
+      <!-- </div><br> -->
     <!-- Teaser -->
     <div class='Video' >
-      <hr>
+      <!-- <hr> -->
       <!-- <center>
         <h2 id="Video" style="padding-top: 80px; margin-top: -80px">Video</h2>
       </center> -->
@@ -153,47 +168,37 @@
         <!-- Your browser does not support the video tag. -->
       </video>
     </center>
-    <hr>
+    <!-- <hr> -->
     </div>
-
+    <br>
+    <br>
+    <br>
     <!-- Abstract -->
     <div class="container">
-    <hr>
-    <center>
+    <!-- <hr> -->
+    <!-- <center>
         <h2 id="Abstract" style="padding-top: 80px; margin-top: -80px;">Abstract</h2>
-    </center>
+    </center> -->
     <p  style="font-size: 20px;  text-align: justify">
         Scene Dynamic Recovery (SDR) by inverting distorted Rolling Shutter (RS) images to an undistorted high frame-rate Global Shutter (GS) video is a severely ill-posed problem, particularly when prior knowledge about camera/object motions is unavailable. Commonly used artificial assumptions on motion linearity and data-specific characteristics, regarding the temporal dynamics information embedded in the RS scanlines, are prone to producing sub-optimal solutions in real-world scenarios. To address this challenge, we propose an event-based RS2GS framework within a self-supervised learning paradigm that leverages the extremely high temporal resolution of event cameras to provide accurate inter/intra-frame information. Specifically, an Event-based Inter/intra-frame Compensator (E-IC) is proposed to predict the per-pixel dynamic between arbitrary time intervals, including the temporal transition and spatial translation. Exploring connections in terms of RS-RS, RS-GS, and GS-RS, we explicitly formulate mutual constraints with the proposed E-IC, resulting in supervisions without ground-truth GS images. Extensive evaluations over synthetic and real datasets demonstrate that the proposed method achieves state-of-the-art and shows remarkable performance for event-based RS2GS inversion in real-world scenarios.
     </p>
     </div><br>
 
-    <!-- Download -->
-    <div class='download'>
-    <hr>
-    <center>
-        <h2 id="Download" style="padding-top: 80px; margin-top: -80px">Download</h2>
-    </center>
-    <div class='container' style="width: 60%">
-    <ul>
-    <li style='font-size: 20px'><a href='./selfunroll.pdf'>Paper (PDF)</a></li>
-    <li style='font-size: 20px'><a href="https://github.com/w3un/SelfUnroll_event">Code and Dataset</a></li>
-    </ul>
-    </div>
-    </div><br>
+    
     <!-- Video -->
     
     <div class='Video' >
-      <hr>
-      <center>
+      <!-- <hr> -->
+      <!-- <center>
         <h2 id="Video" style="padding-top: 80px; margin-top: -80px">Video</h2>
-      </center>
+      </center> -->
     <center>
       <video controls align=center style="width: 1280px; height: 720px;; margin: 0 auto;">
         <source src="./images/VIDEO.mp4" type="video/mp4">
         <!-- Your browser does not support the video tag. -->
       </video>
     </center>
-    <hr>
+    <!-- <hr> -->
     </div>
   </div><br>
     
@@ -224,17 +229,27 @@
 
 
     <!-- gev Results -->
+    <!-- <style>
+      .Results {
+  display: flex;
+  justify-content: center;
+}
+.textResults {
+  text-align: left;
+}
+
+      </style> -->
     <div class='Results'>
     <!-- <hr> -->
-    <center>
-      <h2 id="Results" style="padding-top: 80px; margin-top: -80px">More Results</h2>
-  </center>
-    <p class="text-center">
+    <!-- <center> -->
+      <h2 id="textResults" style="padding-top: 80px; margin-left: 250px;margin-top: -80px">More Results</h2>
+  <!-- </center> -->
+    <p style=" margin-left: 250px;">
       Below are event frame，RS image and the reconstructions of <a href="https://github.com/GitCVfb/CVR">CVR</a>, <a href="https://github.com/zxyemo/EvUnroll">EvUnroll</a> and ours <a href="https://github.com/w3un/SelfUnroll_event">SelfUnroll-M</a> on Gev-RS-real and DRE datasets.<br>
       <b>When the mouse hovers over the image, the RS image is displayed above the green line as a comparison of the correction.</b></p>
-    <center>
-        <h3  style="padding-top: 80px; margin-top: -80px">More Results on Gev-RS-real dataset</h2>
-    </center>
+    
+        <h4  style="padding-top: 80px; margin-left: 250px;margin-top: -80px">Gev-RS-real dataset</h4>
+    
     
     <table align=center width=1200px style="font-size: 20px">
         <tr>
@@ -245,6 +260,13 @@
             <th id="label5">Ours</th>
           </tr>
         <tr>
+          <tr>
+            <td><canvas id="1canvas0" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
+            <td><canvas id="1canvas1" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
+            <td><canvas id="1canvas2" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
+            <td><canvas id="1canvas3" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
+            <td><canvas id="1canvas4" class="gev"  width="346" height="260" style="width: 230px;"></canvas></td>
+          </tr>
             <tr>
                 <td><canvas id="3canvas0" class="gev"  width="1280" height="720" style="width: 230px; "></canvas></td>
                 <td><canvas id="3canvas1" class="gev"  width="1280" height="720" style="width: 230px; "></canvas></td>
@@ -258,27 +280,21 @@
                 <td><canvas id="4canvas2" class="gev"  width="1280" height="720" style="width: 230px; "></canvas></td>
                 <td><canvas id="4canvas3" class="gev"  width="1280" height="720" style="width: 230px; "></canvas></td>
                 <td><canvas id="4canvas4" class="gev"  width="1280" height="720" style="width: 230px;"></canvas></td>
-              </tr>
+              <!-- </tr>
             <td><canvas id="0canvas0" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="0canvas1" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="0canvas2" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="0canvas3" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="0canvas4" class="gev"  width="346" height="260" style="width: 230px;"></canvas></td>
           </tr>
-          <tr>
-            <td><canvas id="1canvas0" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
-            <td><canvas id="1canvas1" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
-            <td><canvas id="1canvas2" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
-            <td><canvas id="1canvas3" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
-            <td><canvas id="1canvas4" class="gev"  width="346" height="260" style="width: 230px;"></canvas></td>
-          </tr>
+          
           <tr>
             <td><canvas id="2canvas0" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="2canvas1" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="2canvas2" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="2canvas3" class="gev"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="2canvas4" class="gev"  width="346" height="260" style="width: 230px;"></canvas></td>
-          </tr>
+          </tr> -->
           
     </table>
     
@@ -288,6 +304,13 @@
         const canvases = document.querySelectorAll('.gev');
         // 定义要加载的图片路径数组
         const imagePaths = [[
+          './images/gev/2/05_001435_032300_00038-event_00.png',
+          './images/gev/2/rs.png',
+          './images/gev/2/cvr.png',
+          './images/gev/2/evunroll.png',
+          './images/gev/2/res.png',
+        ],
+        [
           './images/gev/4/event_1.png',
           './images/gev/4/RS_1.png',
           './images/gev/4/cvr_1.png',
@@ -299,25 +322,6 @@
           './images/gev/5/cvr.png',
           './images/gev/5/evunroll.png',
           './images/gev/5/our.png',
-        ],[
-          './images/gev/1/04_001435_032300_00022-event_00.png',
-          './images/gev/1/rs.png',
-          './images/gev/1/cvr.png',
-          './images/gev/1/evunroll.png',
-          './images/gev/1/res.png',
-        ],
-        [
-          './images/gev/2/05_001435_032300_00038-event_00.png',
-          './images/gev/2/rs.png',
-          './images/gev/2/cvr.png',
-          './images/gev/2/evunroll.png',
-          './images/gev/2/res.png',
-        ],[
-          './images/gev/3/02_004548_032300_00241-event_00.png',
-          './images/gev/3/rs.png',
-          './images/gev/3/cvr.png',
-          './images/gev/3/evunroll.png',
-          './images/gev/3/res.png',
         ]];
         // 遍历每个画布元素
         canvases.forEach((canvas, index) => {
@@ -389,12 +393,14 @@
    
 
 
-    <hr>
+    <!-- <hr>
 
-    <hr>
-    <center>
-        <h3  style="padding-top: 80px; margin-top: -80px">More Results on DRE dataset</h2>
-    </center>
+    <hr> -->
+    <!-- <center>
+        <h5  style="padding-top: 80px; margin-top: -80px">DRE dataset</h5>
+    </center> -->
+    <br>
+    <h4  style="padding-top: 80px; margin-left: 250px;margin-top: -40px">DRE dataset</h4>
     <table align=center width=1200px style="font-size: 20px">
         <tr>
             <th id="label1">Event Frame</th>
@@ -424,7 +430,7 @@
             <td><canvas id="0canvas3" class="dre"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="0canvas4" class="dre"  width="346" height="260" style="width: 230px;"></canvas></td>
           </tr>
-          <tr>
+          <!-- <tr>
             <td><canvas id="1canvas0" class="dre"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="1canvas1" class="dre"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="1canvas2" class="dre"  width="346" height="260" style="width: 230px; "></canvas></td>
@@ -437,7 +443,7 @@
             <td><canvas id="2canvas2" class="dre"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="2canvas3" class="dre"  width="346" height="260" style="width: 230px; "></canvas></td>
             <td><canvas id="2canvas4" class="dre"  width="346" height="260" style="width: 230px;"></canvas></td>
-          </tr>
+          </tr> -->
           
     </table>
     
@@ -458,12 +464,6 @@
           './images/dre/5/cvr_.png',
           './images/dre/5/evunroll_.png',
           './images/dre/5/res_.png',
-        ],[
-          './images/dre/1/event.png',
-          './images/dre/1/rs.png',
-          './images/dre/1/cvr.png',
-          './images/dre/1/evunroll.png',
-          './images/dre/1/our.png',
         ],
         [
           './images/dre/2/rs-2023_03_10_15_57_19_000068-event_00.png',
@@ -471,12 +471,6 @@
           './images/dre/2/cvr_.png',
           './images/dre/2/evunroll_.png',
           './images/dre/2/res_.png',
-        ],[
-          './images/dre/3/event_4.png',
-          './images/dre/3/rs.png',
-          './images/dre/3/cvr.png',
-          './images/dre/3/evunroll.png',
-          './images/dre/3/res.png',
         ]];
         // 遍历每个画布元素
         canvasesdre.forEach((canvas, index) => {
@@ -548,7 +542,7 @@
    
 
 
-    <hr>
+    <!-- <hr> -->
     </div><br>
     <!-- dre Results -->
     <!-- <div class='dreResults'>
