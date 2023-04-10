@@ -180,7 +180,7 @@
         <h2 id="Abstract" style="padding-top: 80px; margin-top: -80px;">Abstract</h2>
     </center> -->
     <p  style="font-size: 20px;  text-align: justify">
-        Scene Dynamic Recovery (SDR) by inverting distorted Rolling Shutter (RS) images to an undistorted high frame-rate Global Shutter (GS) video is a severely ill-posed problem, particularly when prior knowledge about camera/object motions is unavailable. Commonly used artificial assumptions on motion linearity and data-specific characteristics, regarding the temporal dynamics information embedded in the RS scanlines, are prone to producing sub-optimal solutions in real-world scenarios. To address this challenge, we propose an event-based RS2GS framework within a self-supervised learning paradigm that leverages the extremely high temporal resolution of event cameras to provide accurate inter/intra-frame information. Specifically, an Event-based Inter/intra-frame Compensator (E-IC) is proposed to predict the per-pixel dynamic between arbitrary time intervals, including the temporal transition and spatial translation. Exploring connections in terms of RS-RS, RS-GS, and GS-RS, we explicitly formulate mutual constraints with the proposed E-IC, resulting in supervisions without ground-truth GS images. Extensive evaluations over synthetic and real datasets demonstrate that the proposed method achieves state-of-the-art and shows remarkable performance for event-based RS2GS inversion in real-world scenarios.
+      The exposure mechanism of the <a href='https://en.wikipedia.org/wiki/Rolling_shutter' >Rolling Shutter</a> (RS) often causes distortion of the objects being captured, especially in dynamic scenes. Scene Dynamic Recovery by inverting distorted RS images to an undistorted high frame-rate Global Shutter (GS) video is a severely ill-posed problem, particularly when prior knowledge about camera/object motions is unavailable. Commonly used artificial assumptions on motion linearity and data-specific characteristics, regarding the temporal dynamics information embedded in the RS scanlines, are prone to producing sub-optimal solutions in real-world scenarios. To address this challenge, we propose an event-based RS2GS framework within a self-supervised learning paradigm that leverages the extremely high temporal resolution of event cameras to provide accurate inter/intra-frame information. Specifically, an Event-based Inter/intra-frame Compensator (E-IC) is proposed to predict the per-pixel dynamic between arbitrary time intervals, including the temporal transition and spatial translation. Exploring connections in terms of RS-RS, RS-GS, and GS-RS, we explicitly formulate mutual constraints with the proposed E-IC, resulting in supervisions without ground-truth GS images. Extensive evaluations over synthetic and real datasets demonstrate that the proposed method achieves state-of-the-art and shows remarkable performance for event-based RS2GS inversion in real-world scenarios.
     </p>
     </div><br>
 
@@ -397,10 +397,10 @@
 
     <hr> -->
     <!-- <center>
-        <h5  style="padding-top: 80px; margin-top: -60px">DRE dataset</h5>
+        <h5  style="padding-top: 80px; margin-top: -80px">DRE dataset</h5>
     </center> -->
     <br>
-    <h4  style="padding-top: 80px; margin-left: 250px;margin-top: -40px">DRE dataset</h4>
+    <h4  style="padding-top: 80px; margin-left: 250px;margin-top: -60px">DRE dataset</h4>
     <table align=center width=1200px style="font-size: 20px">
         <tr>
             <th id="label1">Event Frame</th>
