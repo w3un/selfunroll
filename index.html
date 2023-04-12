@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SelfUnroll</title>
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
@@ -31,7 +30,7 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
@@ -136,57 +135,107 @@
     </div>
   </section>
     
+  
+
+<!-- is-max-desktop -->
     <section class="hero is-light is-small">
       <div class="hero-body">
-        <div class="container">
+        
+        <div class="container is-max-desktop">
+          
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-steve">
-              <video poster="" id="Stone" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/Stone.mp4"
+              
+              <video poster="" id="Horse" autoplay controls muted loop playsinline height="100%">
+                <source src="./images/headvideo/24209_1_28.mp4"
                         type="video/mp4">
               </video>
+              
             </div>
             <div class="item item-chair-tp">
-              <video poster="" id="Fountain" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/Fountain.mp4"
+              <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
+                <source src="./images/headvideo/24209_1_33.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-shiba">
-              <video poster="" id="Horse" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/Horse.mp4"
+              <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
+                <source src="./images/headvideo/24209_1_38.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <!-- <div class="item item-toby">
+              <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
+                <source src="./images/headvideo/24209_1_30.mp4"
+                        type="video/mp4">
+              </video>
+            </div> -->
+            <div class="item item-toby">
+              
+              <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
+                <source src="./images/headvideo/24209_1_37.mp4"
+                        type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-toby">
+              
+              <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
+                <source src="./images/headvideo/24209_1_31.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-toby">
               <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/Couryard.mp4"
+                <source src="./images/headvideo/24209_1_36.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-toby">
-              <video poster="" id="DTU_65" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/DTU_65.mp4"
+              
+              <video poster="" id="Fountain" autoplay controls muted loop playsinline height="100%">
+                <source src="./images/headvideo/24209_1_25.mp4"
                         type="video/mp4">
               </video>
             </div>
             <div class="item item-toby">
-              <video poster="" id="DTU_114" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/DTU_114.mp4"
+              
+              <video poster="" id="Stone" autoplay controls muted loop playsinline height="100%">
+                <source src="./images/headvideo/24209_1_13.mp4"
                         type="video/mp4">
               </video>
             </div>
-            <div class="item item-toby">
-              <video poster="" id="facade" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/Facade.mp4"
-                        type="video/mp4">
-              </video>
+            
+          </div>
+          <div class="columns is-centered has-text-centered">
+
+            <!-- Two view Initialization. -->
+            <div class="column text-is-centered">
+              <div class="content">
+                <h4 class="title is-5">RS Video</h4>
+              </div>
+            </div>
+            <!--/ Visual Effects. -->
+      
+            <!-- Matting. -->
+            <div class="column text-is-centered">
+              <h4 class="title is-5">Ours</h4>
+              <div class="columns is-centered">
+                <div class="column content">
+                </div>
+      
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <br>
+    <script>bulmaCarousel.attach('.carousel', {
+      minVisible: 3,
+      // other options...
+    });</script>
+
+      <!-- <temp> -->
     <!-- Abstract -->
     <section class="section">
       <div class="container is-max-desktop">
@@ -203,7 +252,13 @@
           </div>
         </div>
         
-      
+      <!-- <script>
+        const carousel = new bulmaCarousel('.carousel', {
+  slidesToShow: 2,
+  slidesToScroll: 2,
+});
+
+      </script> -->
 
     
         <section class="section">
@@ -220,6 +275,11 @@
 
         </section>
 
+
+<!-- //temp -->
+
+<!-- temp -->
+
         <section class="section">
           <div class="container is-max-desktop"
           <div class="columns is-centered ">
@@ -230,13 +290,13 @@
             </div>
               <div class="content has-text-justified">
                 <p>
-                  Our methods can generate GS video at arbitrary time from rolling shutter images and events. We compare Our SelfUnoll-M with <a href="https://github.com/GitCVfb/CVR">CVR</a> and <a href="https://github.com/zxyemo/EvUnroll">EvUnroll</a> on 10X (1st row), 50X (2nd row), 100X (3rd row) reconstructions (nX represents the reconstructing n GS frames from one RS frame).
+                  Our methods can generate GS video at arbitrary time from rolling shutter images and events. We compare Our SelfUnoll-M with <a href="https://github.com/GitCVfb/CVR">CVR</a> and <a href="https://github.com/zxyemo/EvUnroll">EvUnroll</a> on 10X (1st row), 50X (2nd row), 100X (3rd row) reconstructions (nX represents the reconstructions n GS frames from one RS frame).
                 </p>
                 </div>
 
                   
                   <hr>
-
+                  
                 <div class="columns has-text-centered">
                   <div class="column">
                     <div class="content">
@@ -284,7 +344,55 @@
                               <source src="./images/video1/200_1.mp4" type="video/mp4">
                           </video>
                 </div> 
-
+                <hr>
+                <div class="columns has-text-centered">
+                  <div class="column">
+                    <div class="content">
+                      <h4 class="title is-5">Event Frame</h4>
+                      
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content has-text-centered">
+                      <h4 class="title is-5">RS Image</h4>
+                      
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content has-text-centered">
+                      <h4 class="title is-5">CVR</h4>
+                      
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content has-text-centered">
+                      <h4 class="title is-5">EvUnroll</h4>
+                      
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content has-text-centered">
+                      <h4 class="title is-5">Ours</h4>
+                      
+                    </div>
+                  </div>
+                </div> 
+                <div class="columns has-text-centered">
+                  <!-- <div class="column is-full-width"> -->
+                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                              <source src="./images/video4/output2.mp4" type="video/mp4">
+                          </video></div>
+                <!-- </div>  -->
+                <div class="columns has-text-centered">
+                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                              <source src="./images/video4/output1.mp4" type="video/mp4">
+                          </video>
+                </div> 
+                <div class="columns has-text-centered">
+                  <video width="100%" playsinline="" autoplay="" loop="" preload="" muted="">
+                              <source src="./images/video4/output.mp4" type="video/mp4">
+                          </video>
+                </div> 
 
                   <hr>
 
@@ -342,7 +450,9 @@
           </div>
         
       </section>    
-    
+   
+
+
       <section class="section">
         <div class="container is-max-desktop">
         <div class="columns is-centered" >
@@ -423,6 +533,7 @@
         </div>
         </div>
       </section>
+
 
 
     
@@ -517,11 +628,11 @@ canvases.sort(function(a, b) {
           './images/dre/5/evunroll_.png',
           './images/dre/5/res_.png',
         ],[
-      './images/gev/5/event.png',
-      './images/gev/5/rs.png',
-      './images/gev/5/cvr.png',
-      './images/gev/5/evunroll.png',
-      './images/gev/5/our.png',
+      './images/gev/4/event_1.png',
+      './images/gev/4/rs_1.png',
+      './images/gev/4/cvr_1.png',
+      './images/gev/4/evunroll_1.png',
+      './images/gev/4/our_1.png',
     ]];
     // 遍历每个画布元素
     canvases.forEach((canvas, index) => {
@@ -598,7 +709,7 @@ canvas.addEventListener("mousemove",  e => {
     mergeContext.moveTo(0, y);
     mergeContext.lineTo(canvas.width, y);
     mergeContext.closePath()
-    mergeContext.strokeStyle = "#444444";
+    mergeContext.strokeStyle = "#ffff4d";
     mergeContext.lineWidth = canvas.width/100;           
     mergeContext.stroke();
     // Draw arrow
@@ -626,7 +737,7 @@ canvas.addEventListener("mousemove",  e => {
     // mergeContext.stroke();
     mergeContext.closePath();
     // mergeContext.stroke();
-    mergeContext.fillStyle = "#444444";
+    mergeContext.fillStyle = "#ffff4d";
     mergeContext.fill();
     
 //     画竖向分割线
