@@ -137,20 +137,13 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
       <div class="container is-max-desktop">
         <div class="columns is-centered ">
           <div class="column is-full-width">
-            <div class="content has-text-centered">
-            <h2 class="title is-3">Scene Dynamic Recovery in Real-World</h2>
-          </div>
+            
           </div>
         </div>
         
         
-          <div class="content has-text-justified">
-            <p>
-              Our methods can generate GS video at arbitrary time from rolling shutter images and events. We compare Our SelfUnoll-M with <a href="https://github.com/GitCVfb/CVR">CVR</a> and <a href="https://github.com/zxyemo/EvUnroll">EvUnroll</a> on 10X (1st row), 50X (2nd row), 100X (3rd row) reconstructions (nX represents the reconstructions n GS frames from one RS frame).
-            </p>
-          </div>
-            </div>
-            <div class="container " style="width: 70%;"> 
+          
+            <div class="container " style="width:100%;"> 
             
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-steve">
@@ -235,6 +228,15 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
   
           </div>
         </div>
+        <!-- <br> -->
+        <div class="content has-text-justified">
+          <p>
+            Our method can generate GS video at arbitrary time from rolling shutter images and events. We compare Our SelfUnoll-M with <a href="https://github.com/GitCVfb/CVR">CVR</a> and <a href="https://github.com/zxyemo/EvUnroll">EvUnroll</a> on 10X (1st row), 50X (2nd row), 100X (3rd row) reconstructions (nX represents the reconstructions n GS frames from one RS frame).
+          </p>
+        </div>
+        <br>
+        
+          </div>
     
   </section>
     <!-- <script>bulmaCarousel.attach('.carousel', {
@@ -244,12 +246,15 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 
       <!-- <temp> -->
     <!-- Abstract -->
-    <section class="section">
+
+    <br>
+    <section class="hero is-light is-small">
       <div class="container is-max-desktop">
         <!-- Abstract. -->
+        <br>
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <h2 class="title is-2">Abstract</h2>
+            <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
                 Scene Dynamic Recovery by inverting distorted <a href="https://en.wikipedia.org/wiki/Rolling_shutter">Rolling shutter</a>（RS） images to an undistorted high frame-rate Global Shutter (GS) video is a severely ill-posed problem, particularly when prior knowledge about camera/object motions is unavailable. Commonly used artificial assumptions on motion linearity and data-specific characteristics, regarding the temporal dynamics information embedded in the RS scanlines, are prone to producing sub-optimal solutions in real-world scenarios. To address this challenge, we propose an event-based RS2GS framework within a self-supervised learning paradigm that leverages the extremely high temporal resolution of event cameras to provide accurate inter/intra-frame information. Specifically, an Event-based Inter/intra-frame Compensator (E-IC) is proposed to predict the per-pixel dynamic between arbitrary time intervals, including the temporal transition and spatial translation. Exploring connections in terms of RS-RS, RS-GS, and GS-RS, we explicitly formulate mutual constraints with the proposed E-IC, resulting in supervisions without ground-truth GS images. Extensive evaluations over synthetic and real datasets demonstrate that the proposed method achieves state-of-the-art and shows remarkable performance for event-based RS2GS inversion in real-world scenarios.
@@ -259,7 +264,7 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
           </div>
         </div>
       </div>
-
+      <br>
     </section>
       <!-- <script>
         const carousel = new bulmaCarousel('.carousel', {
@@ -269,27 +274,171 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 
       </script> -->
 
-    
-        <section class="section">
-          <!-- Paper Pipeline. -->
+      <br>
+        <section class="hero is-light is-small">
+          <!-- Paper Pipeline. --><br>
           <div class="columns is-centered has-text-centered">
+            
             <div class="column is-four-fifths">
               <h2 class="title is-3">Method</h2>
               <div class="container" style="width: 70%;">
-              <video id="sdf_tri" autoplay controls muted loop playsinline width="100%">
+              <video id="sdf_tri"  controls muted loop playsinline width="100%">
                 <source src="./images/VIDEO.mp4"
                         type="video/mp4">
               </video>
+              
             </div>
             </div>
           </div>
+          
+          </div>
+          
+
 
         </section>
 
 
           
    <br>
+   <section class="hero is-light is-small">
+    <div class="container is-max-desktop">
+      <br>
+      <div class="columns is-centered ">
+        <div class="column is-full-width">
+          <div class="content has-text-centered">
+          <h2 class="title is-3">More Results of Single GS Frame Reconstrction</h2>
+        </div>
+        </div>
+      </div>
+      
+      
+        <div class="content has-text-justified">
+          <p>
+            To evaluate the effectiveness of different methods of RS correction, the upper portion of the image displays the reconstructed effect <b>when the mouse is hovered over it</b>, while the lower portion shows the original input RS image. This allows for a clearer comparison of the correction effect.
+          </p>
+        </div>
+      </div>
+          
+    <br>
+      <div class="container" style="width: 60%;">
+    <div class="columns is-gapless is-centered" >
      
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="canvas-wrapper">
+            <canvas id="1canvas0" class="gev"  ></canvas>
+          </div>
+          <div class="canvas-wrapper">
+          <canvas id="0canvas0" class="gev" ></canvas>
+        </div>
+        <div class="canvas-wrapper">
+          <canvas id="2canvas0" class="gev"></canvas>
+        </div>
+        <div class="canvas-wrapper1">
+          <canvas id="3canvas0" class="gev" ></canvas>
+        </div>
+        </div>
+        
+      </div>
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="canvas-wrapper">
+          <canvas id="1canvas1" class="gev" ></canvas></div>
+          <div class="canvas-wrapper">
+          <canvas id="0canvas1" class="gev"></canvas></div>
+          <div class="canvas-wrapper">
+          <canvas id="2canvas1" class="gev"></canvas></div>
+          <div class="canvas-wrapper1">
+          <canvas id="3canvas1" class="gev"></canvas></div>
+        </div>
+        
+      </div>
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="canvas-wrapper">
+          <canvas id="1canvas2" class="gev"></canvas></div>
+          <div class="canvas-wrapper">
+          <canvas id="0canvas2" class="gev"></canvas></div>
+          <div class="canvas-wrapper">
+          <canvas id="2canvas2" class="gev"></canvas></div>
+          <div class="canvas-wrapper1">
+          <canvas id="3canvas2" class="gev" ></canvas></div>
+        </div>
+        
+      </div>
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="canvas-wrapper">
+          <canvas id="1canvas3" class="gev"  ></canvas></div>
+          <div class="canvas-wrapper">
+          <canvas id="0canvas3" class="gev"  ></canvas></div>
+          <div class="canvas-wrapper">
+          <canvas id="2canvas3" class="gev" ></canvas></div>
+          <div class="canvas-wrapper1">
+          <canvas id="3canvas3" class="gev" ></canvas></div>
+        </div>
+        
+      </div>
+      <div class="column">
+        <div class="content has-text-centered">
+          <div class="canvas-wrapper">
+          <canvas id="1canvas4" class="gev"></canvas></div>
+          <div class="canvas-wrapper">
+          <canvas id="0canvas4" class="gev" ></canvas></div>
+          <div class="canvas-wrapper">
+          <canvas id="2canvas4" class="gev"></canvas></div>
+          <div class="canvas-wrapper1">
+          <canvas id="3canvas4" class="gev"></canvas></div>
+        </div>
+        
+      </div>
+    </div>
+  
+  
+    <!-- <div class="container" style="width: 75%;"> -->
+                    
+                  
+      <div class="columns is-gapless is-centered has-text-centered">
+
+        <div class="column text-is-centered">
+          <div class="content">
+            <h5 class=" is-5">Event Frame</h5>
+          </div>
+        </div>
+        <div class="column text-is-centered">
+          <div class="content">
+            <h5 class=" is-5">RS Video</h5>
+          </div>
+        </div>
+        <div class="column text-is-centered">
+          <div class="content">
+            <h5 class=" is-5">CVR</h5>
+          </div>
+        </div>
+        <div class="column text-is-centered">
+          <div class="content">
+            <h5 class=" is-5">EvUnroll</h5>
+          </div>
+        </div>
+        <div class="column text-is-centered">
+          <div class="content">
+            <h5 class=" is-5">Ours</h5>
+          </div>
+        </div>
+      <!-- </div> -->
+
+    
+  
+
+
+    
+
+
+    </div>
+  </div>
+    
+    
+  </section>
    <br>
         <section class="hero is-light is-small">
           <div class="hero-body">
@@ -314,65 +463,90 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
             </div>
             <div class="container " style="width: 70%;"> 
               <div id="results-carousel1" class="carousel results-carousel">
-                <div class="item item-steve">
-                  
-                  <video poster="" id="Horse" autoplay controls muted loop playsinline height="100%">
-                    <source src="./images/headvideo/24209_1_28.mp4"
-                            type="video/mp4">
-                  </video>
-                  
-                </div>
-                <div class="item item-chair-tp">
-                  <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
-                    <source src="./images/headvideo/24209_1_33.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-shiba">
-                  <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
-                    <source src="./images/headvideo/24209_1_38.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
                 
                 <div class="item item-toby">
                   
-                  <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
-                    <source src="./images/headvideo/24209_1_37.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-toby">
-                  
-                  <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
-                    <source src="./images/headvideo/24209_1_31.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-toby">
-                  <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
-                    <source src="./images/headvideo/24209_1_36.mp4"
-                            type="video/mp4">
-                  </video>
-                </div>
-                <div class="item item-toby">
-                  
-                  <video poster="" id="Fountain" autoplay controls muted loop playsinline height="100%">
-                    <source src="./images/headvideo/24209_1_25.mp4"
+                  <video poster="" id="Stone" autoplay controls muted loop playsinline height="100%">
+                    <source src="./images/gsvideo/190206_Tuebingen_000092.mp4"
                             type="video/mp4">
                   </video>
                 </div>
                 <div class="item item-toby">
                   
                   <video poster="" id="Stone" autoplay controls muted loop playsinline height="100%">
-                    <source src="./images/headvideo/24209_1_13.mp4"
+                    <source src="./images/gsvideo/190206_Tuebingen_000100.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-toby">
+                  
+                  <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
+                    <source src="./images/gsvideo/fast.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-toby">
+                  
+                  <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
+                    <source src="./images/gsvideo/190206_Tuebingen_000004.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-toby">
+                  <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
+                    <source src="./images/gsvideo/190206_Tuebingen_000011.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-toby">
+                  
+                  <video poster="" id="Fountain" autoplay controls muted loop playsinline height="100%">
+                    <source src="./images/gsvideo/190206_Tuebingen_000017.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-toby">
+                  
+                  <video poster="" id="Stone" autoplay controls muted loop playsinline height="100%">
+                    <source src="./images/gsvideo/190206_Tuebingen_000018.mp4"
                             type="video/mp4">
                   </video>
                 </div>
                 
+                <div class="item item-steve">
+                  
+                  <video poster="" id="Horse" autoplay controls muted loop playsinline height="100%">
+                    <source src="./images/gsvideo/24209_1_33.mp4"
+                            type="video/mp4">
+                  </video>
+                  
+                </div>
+                <div class="item item-chair-tp">
+                  <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
+                    <source src="./images/gsvideo/24209_1_36.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
+                <div class="item item-shiba">
+                  <video poster="" id="Couryard" autoplay controls muted loop playsinline height="100%">
+                    <source src="./images/gsvideo/24209_1_31.mp4"
+                            type="video/mp4">
+                  </video>
+                </div>
               </div>
+              <div class="container" style="width: 80%;">
               <div class="columns is-centered has-text-centered">
-      
+                <div class="column text-is-centered">
+                  <div class="content">
+                    <!-- <h4 class="title is-5">RS Video</h4> -->
+                  </div>
+                </div>
+                <div class="column text-is-centered">
+                  <div class="content">
+                    <h5 class="is-5">Event Frame</h5>
+                  </div>
+                </div>
+                
                 <div class="column text-is-centered">
                   <div class="content">
                     <!-- <h4 class="title is-5">RS Video</h4> -->
@@ -400,148 +574,12 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
                 </div>
               </div>
             </div>
+            </div>
           </div>
         </section>
 <br>
 <br>
-      <section class="hero is-light is-small">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered ">
-            <div class="column is-full-width">
-              <div class="content has-text-centered">
-              <h2 class="title is-3">Single GS Frame Reconstrction</h2>
-            </div>
-            </div>
-          </div>
-          
-          
-            <div class="content has-text-justified">
-              <p>
-                To evaluate the effectiveness of different methods of RS correction, the upper portion of the image displays the reconstructed effect <b>when the mouse is hovered over it</b>, while the lower portion shows the original input RS image. This allows for a clearer comparison of the correction effect.
-              </p>
-            </div>
-          </div>
-              
-        <br>
-          <div class="container" style="width: 60%;">
-        <div class="columns is-gapless is-centered" >
-         
-          <div class="column">
-            <div class="content has-text-centered">
-              <div class="canvas-wrapper">
-                <canvas id="1canvas0" class="gev"  ></canvas>
-              </div>
-              <div class="canvas-wrapper">
-              <canvas id="0canvas0" class="gev" ></canvas>
-            </div>
-            <div class="canvas-wrapper">
-              <canvas id="2canvas0" class="gev"></canvas>
-            </div>
-            <div class="canvas-wrapper1">
-              <canvas id="3canvas0" class="gev" ></canvas>
-            </div>
-            </div>
-            
-          </div>
-          <div class="column">
-            <div class="content has-text-centered">
-              <div class="canvas-wrapper">
-              <canvas id="1canvas1" class="gev" ></canvas></div>
-              <div class="canvas-wrapper">
-              <canvas id="0canvas1" class="gev"></canvas></div>
-              <div class="canvas-wrapper">
-              <canvas id="2canvas1" class="gev"></canvas></div>
-              <div class="canvas-wrapper1">
-              <canvas id="3canvas1" class="gev"></canvas></div>
-            </div>
-            
-          </div>
-          <div class="column">
-            <div class="content has-text-centered">
-              <div class="canvas-wrapper">
-              <canvas id="1canvas2" class="gev"></canvas></div>
-              <div class="canvas-wrapper">
-              <canvas id="0canvas2" class="gev"></canvas></div>
-              <div class="canvas-wrapper">
-              <canvas id="2canvas2" class="gev"></canvas></div>
-              <div class="canvas-wrapper1">
-              <canvas id="3canvas2" class="gev" ></canvas></div>
-            </div>
-            
-          </div>
-          <div class="column">
-            <div class="content has-text-centered">
-              <div class="canvas-wrapper">
-              <canvas id="1canvas3" class="gev"  ></canvas></div>
-              <div class="canvas-wrapper">
-              <canvas id="0canvas3" class="gev"  ></canvas></div>
-              <div class="canvas-wrapper">
-              <canvas id="2canvas3" class="gev" ></canvas></div>
-              <div class="canvas-wrapper1">
-              <canvas id="3canvas3" class="gev" ></canvas></div>
-            </div>
-            
-          </div>
-          <div class="column">
-            <div class="content has-text-centered">
-              <div class="canvas-wrapper">
-              <canvas id="1canvas4" class="gev"></canvas></div>
-              <div class="canvas-wrapper">
-              <canvas id="0canvas4" class="gev" ></canvas></div>
-              <div class="canvas-wrapper">
-              <canvas id="2canvas4" class="gev"></canvas></div>
-              <div class="canvas-wrapper1">
-              <canvas id="3canvas4" class="gev"></canvas></div>
-            </div>
-            
-          </div>
-        </div>
-      
-      
-        <!-- <div class="container" style="width: 75%;"> -->
-                        
-                      
-          <div class="columns is-gapless is-centered has-text-centered">
-  
-            <div class="column text-is-centered">
-              <div class="content">
-                <h5 class=" is-5">Event Frame</h5>
-              </div>
-            </div>
-            <div class="column text-is-centered">
-              <div class="content">
-                <h5 class=" is-5">RS Video</h5>
-              </div>
-            </div>
-            <div class="column text-is-centered">
-              <div class="content">
-                <h5 class=" is-5">CVR</h5>
-              </div>
-            </div>
-            <div class="column text-is-centered">
-              <div class="content">
-                <h5 class=" is-5">EvUnroll</h5>
-              </div>
-            </div>
-            <div class="column text-is-centered">
-              <div class="content">
-                <h5 class=" is-5">Ours</h5>
-              </div>
-            </div>
-          <!-- </div> -->
-
-        
-      
-    
-
-        
-
-
-        </div>
-      </div>
-        
-        
-      </section>
+     
 
 
 
