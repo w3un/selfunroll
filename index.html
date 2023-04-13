@@ -646,8 +646,8 @@ canvas.addEventListener("mousemove",  e => {
     image1.src = imagePaths[Math.floor(index/5)][1];
     image2.src = imagePaths[Math.floor(index/5)][i];
     mergeContext.clearRect(0, 0, canvas.width, canvas.height);
-    mergeContext.drawImage(image2, 0, 0, canvases[5*Math.floor(index/5)+i].width, y, 0, 0, canvases[5*Math.floor(index/5)+i].width, y);
-    mergeContext.drawImage(image1, 0, y, canvases[5*Math.floor(index/5)+i].width, canvases[5*Math.floor(index/5)+i].height, 0, y, canvases[5*Math.floor(index/5)+i].width, canvases[5*Math.floor(index/5)+i].height);
+    mergeContext.drawImage(image2, 0, 0, image2.width, y/canvas.height*image2.height, 0, 0, canvases[5*Math.floor(index/5)+i].width, y);
+    mergeContext.drawImage(image1, 0, y/canvas.height*image1.height, image2.width, image1.height, 0, y, canvases[5*Math.floor(index/5)+i].width, canvases[5*Math.floor(index/5)+i].height);
 
     var arrowLength = 0.07 * canvas.width*2;
     var arrowheadWidth = 0.020 * canvas.width*2;
