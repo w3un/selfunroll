@@ -209,49 +209,72 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
               </video>
             </div>
           </div>
-          <!-- <div class="container" style="width: 80%;"> -->
+          <div class="container" style="width: 80%;">
           <div class="columns is-centered has-text-centered">
             
-            <div class="column text-is-centered">
+            <!-- <div class="column is-3 text-is-centered">
               <div class="content">
-                <!-- <h4 class="title is-5">RS Video</h4> -->
               </div>
-            </div>
-            <div class="column text-is-centered">
+            </div> -->
+            <div class="column  text-is-centered">
               <div class="content">
                 <h5 class="is-5">Event Frame</h5>
               </div>
             </div>
-            
-            <div class="column text-is-centered">
+            <!-- <div class="column is-1 text-is-centered">
               <div class="content">
-                <!-- <h4 class="title is-5">RS Video</h4> -->
               </div>
-            </div>
-            <div class="column text-is-centered">
+            </div> -->
+            <!-- <div class="column is-2 text-is-centered">
+              <div class="content">
+              </div>
+            </div> -->
+            <!-- <div class="column is-1 text-is-centered">
+              <div class="content">
+              </div>
+            </div> -->
+            <div class="column  text-is-centered">
               <div class="content">
                 <h5 class="is-5">RS Video</h5>
               </div>
             </div>
-            <div class="column text-is-centered">
-              <div class="content">
-                <!-- <h4 class="title is-5">RS Video</h4> -->
+              <div class="column  text-is-centered">
+                <div class="content">
+                  <h5 class="is-5">Scene Dynamic Recovery <br> by SelfUnroll</h5>
+                </div>
               </div>
-            </div>
-            <div class="column text-is-centered">
+            <!-- </div>
+            <div class="column is-1 text-is-centered">
               <div class="content">
-                <h5 class="is-5">Ours</h5>
               </div>
-            </div>
-            <div class="column text-is-centered">
+            </div> -->
+            <!-- <div class="column is-1 text-is-centered">
               <div class="content">
-                <!-- <h4 class="title is-5">RS Video</h4> -->
               </div>
-            </div>
+            </div> -->
+            <!-- <div class="column is-1 text-is-centered">
+              <div class="content">
+              </div>
+            </div> -->
+            <!-- <div class="column is-2 text-is-centered">
+              <div class="content">
+              </div>
+            </div> -->
+            
+            <!-- <div class="column is-2 text-is-centered">
+              <div class="content">
+              </div>
+            </div> -->
+            <!-- <div class="column text-is-centered">
+              <div class="content">
+                
+              </div>
+            </div> -->
             
           </div>
-        <!-- </div> -->
         </div>
+        </div>
+        <!-- </div> -->
       </div>
     </section>
     
@@ -322,7 +345,7 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
       <div class="columns is-centered ">
         <div class="column is-full-width">
           <div class="content has-text-centered">
-          <h2 class="title is-3">More Results in Real-World</h2>
+          <h2 class="title is-3">More Results in Real-World Scenarios</h2>
         </div>
         <div class="content has-text-centered">
           <h3 class="title is-5">Single GS Frame Reconstrction</h3>
@@ -333,8 +356,14 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
       
         
       </div>
-          
-    <!-- <br> -->
+      <div class="container is-max-desktop">
+        <div class="content has-text-justified">
+          <p>
+            To evaluate the effectiveness of different methods(<a href="https://github.com/GitCVfb/CVR">CVR</a>, <a href="https://github.com/zxyemo/EvUnroll">EvUnroll</a> and Ours) of RS correction, the upper portion of the image displays the reconstructed effect <b>when the mouse is hovered over it</b>, while the lower portion shows the original input RS image. This allows for a clearer comparison of the correction effect.
+          </p>
+        </div>
+      </div>
+    <br>
       <div class="container" style="width: 60%;">
     <div class="columns is-gapless is-centered" >
      
@@ -451,13 +480,7 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 
     </div>
   </div>
-  <div class="container is-max-desktop">
-  <div class="content has-text-justified">
-    <p>
-      To evaluate the effectiveness of different methods(<a href="https://github.com/GitCVfb/CVR">CVR</a>, <a href="https://github.com/zxyemo/EvUnroll">EvUnroll</a> and Ours) of RS correction, the upper portion of the image displays the reconstructed effect <b>when the mouse is hovered over it</b>, while the lower portion shows the original input RS image. This allows for a clearer comparison of the correction effect.
-    </p>
-  </div>
-</div>
+  
   </section>
    <br>
    <section class="hero  is-small">
@@ -469,7 +492,17 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
         </div>
         </div>
       </div>
+      
     </div>
+
+    <div class="container is-max-desktop">
+      <div class="content has-text-justified">
+        <p>
+          Our method can generate continuous-time GS video at arbitrary time from rolling shutter images and events. We compare Our SelfUnoll-M with <a href="https://github.com/GitCVfb/CVR">CVR</a> and <a href="https://github.com/zxyemo/EvUnroll">EvUnroll</a> on 10X (1st row), 50X (2nd row), 100X (3rd row) reconstructions (nX represents the reconstructions n GS frames from one RS frame).
+        </p>
+      </div>
+    </div>
+    <
       <div class="container " style="width:75%;"> 
           
         <div id="results-carousel" class="carousel results-carousel">
@@ -557,17 +590,7 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
       
           
       <!-- <br> -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="content has-text-justified">
-            <p>
-              Our method can generate continuous-time GS video at arbitrary time from rolling shutter images and events. We compare Our SelfUnoll-M with <a href="https://github.com/GitCVfb/CVR">CVR</a> and <a href="https://github.com/zxyemo/EvUnroll">EvUnroll</a> on 10X (1st row), 50X (2nd row), 100X (3rd row) reconstructions (nX represents the reconstructions n GS frames from one RS frame).
-
-            </p>
-          </div>
-        </div>
-      </div>
+      
     </div>
       <br>
       
