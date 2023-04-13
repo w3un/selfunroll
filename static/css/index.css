@@ -48,11 +48,11 @@ body {
 }
 
 .publication-title {
-    /* font-family: 'Google Sans', sans-serif; */
+    font-family: 'Google Sans', sans-serif;
 }
 
 .publication-authors {
-    /* font-family: 'Google Sans', sans-serif; */
+    font-family: 'Google Sans', sans-serif;
 }
 
 .publication-venue {
@@ -111,6 +111,8 @@ body {
 }
 
 .results-carousel {
+  margin: 0 auto; /* 将左右边距设置为auto以将容器水平居中 */
+  width: 80%;
   overflow: hidden;
 }
 
@@ -182,3 +184,30 @@ body {
   margin: 0 auto;
   background-size: cover;
 }
+/* .scolumn {
+  padding: 0;
+} */
+
+.canvas-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75.14%; /* 16:9 aspect ratio */
+}
+.canvas-wrapper1 {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+/* .custom-columns {
+  --gap: 0px;
+} */
