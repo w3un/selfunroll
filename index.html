@@ -242,7 +242,7 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
             </div>
               <div class="column  text-is-centered">
                 <div class="content">
-                  <h5 class="is-5">Scene Dynamic Recovery <br> by SelfUnroll</h5>
+                  <h5 class="is-5">CGVR <br> by SelfUnroll</h5>
                 </div>
               </div>
             <!-- </div>
@@ -298,8 +298,7 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                Scene Dynamic Recovery (SDR) by inverting distorted <a href="https://en.wikipedia.org/wiki/Rolling_shutter">Rolling shutter</a> (RS) images to an undistorted high frame-rate Global Shutter (GS) video is a severely ill-posed problem due to the missing temporal dynamic information in both RS intra-frame scanlines and inter-frame exposures, particularly when prior knowledge about camera/object motions is unavailable. Commonly used artificial assumptions on scenes/motions and data-specific characteristics are prone to producing sub-optimal solutions in real-world scenarios. To address this challenge, we propose an event-based SDR network within a self-supervised learning paradigm, i.e., SelfUnroll. We leverage the extremely high temporal resolution of event cameras to provide accurate inter/intra-frame dynamic information. Specifically, an Event-based Inter/intra-frame Compensator (E-IC) is proposed to predict the per-pixel dynamic between arbitrary time intervals, including the temporal transition and spatial translation. Exploring connections in terms of RS-RS, RS-GS, and GS-RS, we explicitly formulate mutual constraints with the proposed E-IC, resulting in supervisions without ground-truth GS images. Extensive evaluations over synthetic and real datasets demonstrate that the proposed method achieves state-of-the-art and shows remarkable performance for event-based RS2GS inversion in real-world scenarios.
-              </p>
+                Continuous-time Global shutter Video Recovery (CGVR) by inverting distorted Rolling Shutter (RS) images to an undistorted high frame-rate Global Shutter (GS) video is a severely ill-posed problem due to the missing temporal dynamic information in both RS intra-frame scanlines and inter-frame exposures, particularly when prior knowledge about camera/object motions is unavailable. Commonly used artificial assumptions on scenes/motions and dataspecific characteristics are prone to producing suboptimal solutions in real-world scenarios. To address this challenge, we propose an event-based CGVR network within a self-supervised learning paradigm, i.e., SelfUnroll, and leverage the extremely high temporal resolution of event cameras to provide accurate inter/intra-frame dynamic information. Specifically, an Event-based Inter/intra-frame Compensator (E-IC) is proposed to predict the per-pixel dynamic between arbitrary time intervals, including the temporal transition and spatial translation. Exploring connections in terms of RS-RS, RS-GS, and GS-RS, we explicitly formulate mutual constraints with the proposed E-IC, resulting in supervisions without ground-truth GS images. Extensive evaluations over synthetic and real datasets demonstrate that the proposed method achieves state-of-theart and shows remarkable performance for event-based RS2GS inversion in real-world scenarios.              </p>
             </div>
           </div>
         </div>
@@ -788,7 +787,7 @@ canvas.addEventListener("mousemove",  e => {
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{wang2023self,
-        title={Self-Supervised Scene Dynamic Recovery from Rolling Shutter Images and Events},
+        title={Self-Supervised CGVR from Rolling Shutter Images and Events},
         author={Wang, Yangguang and Zhang, Xiang and Lin, Mingyuan and Yu, Lei and Shi, Boxin and Yang, Wen and Xia, Gui-Song},
         journal={arXiv},
         year={2023}
